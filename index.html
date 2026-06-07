@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <style>
+        .completed{
+            text-decoration: line-through;
+   opacity: 0.6;
+        }
+        
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+<head>
+    <title>Document</title>
+</head>
+<body class="bg-slate-100 min-h-screen flex justify-center items-center">
+    <div class="bg-white p-6 rounded-xl shadow-2xl w-full max-w-md">
+     <h1 class="text-3xl font-bold text-center mb-4">TODO App</h1>
+     <div class="flex gap-2">
+ <input class="border rounded-lg p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500" id="input" required type="text">
+    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition" id="add-btn">Add</button>
+     </div>
+   
+    <ul class="mt-4 space-y-2" id="todo-list"></ul>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
